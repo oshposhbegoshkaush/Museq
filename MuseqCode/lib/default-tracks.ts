@@ -1,0 +1,122 @@
+import type { Track } from "./types"
+import { AUDIO_SAMPLES } from "./audio-samples"
+
+export const defaultTracks: Track[] = [
+  {
+    id: "piano-acoustic",
+    name: "Acoustic Piano",
+    instrument: {
+      id: "piano-acoustic",
+      name: "Acoustic Piano",
+      type: "piano",
+      soundType: "sine",
+      color: "blue",
+      sampleUrl: AUDIO_SAMPLES.piano.acoustic,
+    },
+    notes: [],
+  },
+  {
+    id: "piano-electric",
+    name: "Electric Piano",
+    instrument: {
+      id: "piano-electric",
+      name: "Electric Piano",
+      type: "piano",
+      soundType: "sine",
+      color: "blue",
+      sampleUrl: AUDIO_SAMPLES.piano.electric,
+    },
+    notes: [],
+  },
+  {
+    id: "guitar-1",
+    name: "Acoustic Guitar",
+    instrument: {
+      id: "acoustic-guitar",
+      name: "Acoustic Guitar",
+      type: "guitar",
+      soundType: "triangle",
+      color: "green",
+      sampleUrl: AUDIO_SAMPLES.guitar.acoustic,
+    },
+    notes: [],
+  },
+  {
+    id: "guitar-2",
+    name: "Clean Electric Guitar",
+    instrument: {
+      id: "clean-electric-guitar",
+      name: "Clean Electric Guitar",
+      type: "guitar",
+      soundType: "triangle",
+      color: "green",
+      sampleUrl: AUDIO_SAMPLES.guitar.clean,
+    },
+    notes: [],
+  },
+  {
+    id: "guitar-3",
+    name: "Distorted Guitar",
+    instrument: {
+      id: "distorted-guitar",
+      name: "Distorted Guitar",
+      type: "guitar",
+      soundType: "sawtooth",
+      color: "green",
+      sampleUrl: AUDIO_SAMPLES.guitar.distorted,
+    },
+    notes: [],
+  },
+  {
+    id: "kick",
+    name: "Kick Drum",
+    instrument: {
+      id: "kick",
+      name: "Kick Drum",
+      type: "drums",
+      soundType: "square",
+      color: "red",
+      sampleUrl: AUDIO_SAMPLES.drums.kick,
+    },
+    notes: [],
+  },
+  {
+    id: "snare",
+    name: "Snare Drum",
+    instrument: {
+      id: "snare",
+      name: "Snare Drum",
+      type: "drums",
+      soundType: "noise",
+      color: "red",
+      sampleUrl: AUDIO_SAMPLES.drums.snare,
+    },
+    notes: [],
+  },
+  {
+    id: "hihat",
+    name: "Hi-Hat",
+    instrument: {
+      id: "hihat",
+      name: "Hi-Hat",
+      type: "drums",
+      soundType: "noise",
+      color: "red",
+      sampleUrl: AUDIO_SAMPLES.drums.hihat,
+    },
+    notes: [],
+  },
+  {
+    id: "crash",
+    name: "Crash Cymbal",
+    instrument: {
+      id: "crash",
+      name: "Crash Cymbal",
+      type: "drums",
+      soundType: "noise",
+      color: "red",
+      sampleUrl: AUDIO_SAMPLES.drums.crash,
+    },
+    notes: [],
+  },
+]
